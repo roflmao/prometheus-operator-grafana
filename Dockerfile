@@ -1,6 +1,6 @@
 FROM debian:9.5-slim
 
-ENV CASSANDRA_VERSION 5.3.1
+ENV GRAFANA_VERSION 5.3.1
 
 RUN apt-get update && apt-get install -qq -y wget tar sqlite && \
     wget -O /tmp/grafana.tar.gz https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-$GRAFANA_VERSION.linux-amd64.tar.gz && \
