@@ -1,6 +1,6 @@
-FROM debian:9.5-slim
+FROM debian:9-slim
 
-ENV GRAFANA_VERSION 5.3.1
+ENV GRAFANA_VERSION 6.2.0
 
 RUN apt-get update && apt-get install -qq -y wget tar sqlite && \
     wget -O /tmp/grafana.tar.gz https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-$GRAFANA_VERSION.linux-amd64.tar.gz && \
